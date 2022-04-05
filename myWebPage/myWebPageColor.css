@@ -1,0 +1,108 @@
+const morseCode = {
+  'A': ".-",
+  'B': "-...",
+  'C': "-.-.",
+  'D': "-..",
+  'E': ".",
+  'F': "..-.",
+  'G': "--.",
+  'H': "....",
+  'I': "..",
+  'J': ".---",
+  'K': "-.-",
+  'L': ".-..",
+  'M': "--",
+  'N': "-.",
+  'O': "---",
+  'P': ".--.",
+  'Q': "--.-",
+  'R': ".-.",
+  'S': "...",
+  'T': "-",
+  'U': "..-",
+  'V': "...-",
+  'W': ".--",
+  'X': "-..-",
+  'Y': "-.--",
+  'Z': "--..",
+  "&": ".-...",
+  "'": ".----.",
+  "@": ".--.-.",
+  ")": "-.--.-",
+  "(": "-.--.",
+  ":": "---...",
+  ",": "--..--",
+  "=": "-...-",
+  "!": "-.-.--",
+  ".": ".-.-.-",
+  "-": "-....-",
+  'x': "-..-",
+  "%": "------..-.-----",
+  "+": ".-.-.",
+  '"': ".-..-.",
+  "?": "..--..",
+  "/": "-..-.",
+  " ": "/",
+  '0': "-----",
+  '1': ".----",
+  '2': "..---",
+  '3': "...--",
+  '4': "....-",
+  '5': ".....",
+  '6': "-....",
+  '7': "--...",
+  '8': "---..",
+  '9': "----.",
+};
+
+function lettersToMorseCode(inputStr) {
+  let result = "";
+  inputStr = inputStr.toUpperCase();
+  for (let i = 0; i < inputStr.length; i++) {
+    for (key in morseCode) {
+      if (inputStr[i] === key) {
+        result += morseCode[key] + " ";
+      }
+    }
+  }
+  result = result.trim();
+  checkAssertions(inputStr, result.split(" "));
+  return result;
+}
+console.log(lettersToMorseCode(""));
+
+function morseCodeToLetters(outputStr) {
+  outputStr = outputStr.split(" ");
+  let result = "";
+  for (let i = 0; i < outputStr.length; i++) {
+    for (key in morseCode) {
+      if (outputStr[i] === morseCode[key]) {
+        result += key;
+      }
+    }
+  }
+  checkAssertions(result, outputStr);
+  return result;
+}
+console.log(morseCodeToLetters("")
+);
+
+function checkAssertions(input, output) {
+  let outputSpaces = 0;
+  let inputSpaces = 0;
+  let str1 = "input and output";
+  let str2 = "not equal";
+
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] === " ") {
+      inputSpaces++;
+    }
+    if (output[i] === "/") {
+      outputSpaces++;
+    }
+  }
+
+  console.assert(input.length === output.length, `${str1} length ${str2}`);
+  console.assert(inputSpaces === outputSpaces, `${str1} spaces ${str2}`);
+}
+
