@@ -96,7 +96,6 @@ ul li a:hover {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  opacity: 0.8;
 }
 /* hire me button */
 .home-text a {
@@ -147,7 +146,7 @@ ul li a:hover {
 }
 .about-content {
   display: flex;
-  padding: 50px;
+  padding: 20px;
   justify-content: space-around;
   align-items: center;
   background-image: url("a39dc9e60329c1e16fb6c2cc480596a3.jpg");
@@ -161,7 +160,6 @@ ul li a:hover {
   height: 100%;
   object-fit: contain;
   object-position: center;
-  opacity: 0.8;
 }
 .about-text {
   width: 500px;
@@ -178,13 +176,14 @@ ul li a:hover {
   text-align: center;
 }
 .about-text a {
-  padding: 12px 20px;
+  padding: 12px 10px;
   background: rgba(150, 81, 72, 0.712);
   color: #fff;
   border-radius: 10px;
   font-weight: 600;
   letter-spacing: 1px;
 }
+
 .about-text a:hover {
   background: rgba(228, 123, 109, 0.74);
   box-shadow: 0 10px 34px rgba(255, 27, 27, 0.767);
@@ -466,5 +465,5 @@ ul li a:hover {
   }
   .contact-form {
     width: 300px;
-  }
+  }    
 }
