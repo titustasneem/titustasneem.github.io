@@ -28,7 +28,7 @@ section {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: url("a39dc9e60329c1e16fb6c2cc480596a3.jpg");
+  background-image: url("background.jpg");
 }
 
 /* navigation bar css*/
@@ -206,7 +206,7 @@ width: 200px;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  background-image: url("a39dc9e60329c1e16fb6c2cc480596a3.jpg");
+  background-image: url("background.jpg");
 }
 
 .skills-content .box {
@@ -291,7 +291,7 @@ width: 200px;
 }
 
 #contact {
-  background-image: url("a39dc9e60329c1e16fb6c2cc480596a3.jpg");
+  background-image: url("background.jpg");
 }
 .contact-content {
   display: flex;
@@ -340,8 +340,35 @@ width: 200px;
   text-align: center;
 }
 
-/* making responsive */
-/* @media (max-width: 991px) {
+
+@media (max-width: 871px) {
+  section {
+    padding: 50px;
+  }
+
+  .about-text {
+    width: 100%;
+    justify-content: center;
+    line-height: 1.5rem;
+  }
+  .about-text h1 {
+    font-size: 1.5rem;
+    color: rgb(97, 44, 38);
+  }
+  .about-text p {
+    color: rgb(97, 44, 38);
+    margin: 5px 0 24px;
+    font-size: 18px;
+  }
+
+  .cvButton{
+    width: 200px;
+      }
+}
+@media (max-width: 800px) {
+  section {
+    padding: 35px;
+  }
   nav {
     padding: 10px 50px;
     z-index: 1000;
@@ -384,85 +411,6 @@ width: 200px;
     background-size: 25px;
     cursor: pointer;
   }
-  section {
-    padding: 80px;
-  }
-  .home-text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1.8rem;
-    line-height: 4rem;
-  }
-  .home-img {
-    width: 400px;
-    height: 400px;
-  }
-  .social {
-    left: 110px;
-  }
-  .heading h2 {
-    font-size: 1.6rem;
-  }
-  .about-img {
-    width: 250px;
-    height: 400px;
-  }
-  .about-text {
-    width: 100%;
-    justify-content: center;
-    line-height: 1.5rem;
-  }
-  .about-text h1 {
-    font-size: 1.5rem;
-    color: rgb(97, 44, 38);
-  }
-  .about-text p {
-    color: rgb(97, 44, 38);
-    margin: 5px 0 24px;
-    font-size: 18px;
-  }
-  .work-text {
-    width: 400px;
-  }
-  .about-text h1 {
-    font-size: 1.3rem;
-  }
-  .about-text p {
-    line-height: 1.5rem;
-  }
-  .work-img {
-    width: 250px;
-    height: 300px;
-  }
-} */
-@media (max-width: 871px) {
-  section {
-    padding: 50px;
-  }
-
-  .about-text {
-    width: 100%;
-    justify-content: center;
-    line-height: 1.5rem;
-  }
-  .about-text h1 {
-    font-size: 1.5rem;
-    color: rgb(97, 44, 38);
-  }
-  .about-text p {
-    color: rgb(97, 44, 38);
-    margin: 5px 0 24px;
-    font-size: 18px;
-  }
-
-  .cvButton{
-    width: 200px;
-      }
-}
-@media (max-width: 800px) {
-  section {
-    padding: 35px;
-  }
-
   .cvButton{
     width: 200px;
   }
