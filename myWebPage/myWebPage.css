@@ -171,14 +171,13 @@ ul li a:hover {
   justify-content: center;
   line-height: 3.5rem;
 }
-.about-text h1 {
-  font-size: 1.5rem;
-  color: rgb(97, 44, 38);
+#about h1{
+  color: rgb(255, 255, 255);
 }
 .about-text p {
   color: rgb(97, 44, 38);
   margin: 5px 0 24px;
-  font-size: 35px;
+  font-size: 40px;
 }
 .cvButton a {
   padding: 12px 10px;
@@ -327,11 +326,28 @@ ul li a:hover {
 .contact-button {
   max-width: 100px;
   font-weight: 600;
-  background: rgb(228, 123, 109);
+  background: rgb(243, 174, 165);
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
   cursor: pointer;
+  color: rgb(255, 255, 255);
+}
+.contact-form input{
+  background-color: rgba(150, 81, 72, 0.795);
+}
+.contact-form textarea{
+  background-color: rgba(150, 81, 72, 0.849);
+  letter-spacing: 0.1rem;
+}
+.contact-form textarea::placeholder{
+  color: rgb(255, 255, 255);
+  
+}
+.contact-form input::placeholder{
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
 }
 
 .copyright {
@@ -473,10 +489,7 @@ ul li a:hover {
     justify-content: center;
     line-height: 1.5rem;
   }
-  .about-text h1 {
-    font-size: 1.5rem;
-    color: rgb(97, 44, 38);
-  }
+
   .about-text p {
     color: rgb(97, 44, 38);
     margin: 5px 0 24px;
