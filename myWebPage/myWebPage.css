@@ -144,7 +144,7 @@ ul li a:hover {
   margin-top: 0.5rem;
 }
 
-#about{
+#about {
   display: flex;
   justify-content: center;
 }
@@ -180,7 +180,7 @@ ul li a:hover {
   margin: 5px 0 24px;
   font-size: 35px;
 }
-.cvButton a{
+.cvButton a {
   padding: 12px 10px;
   background: rgba(150, 81, 72, 0.712);
   color: #fff;
@@ -190,8 +190,8 @@ ul li a:hover {
   text-decoration: none;
 }
 
-.cvButton{
-width: 200px;
+.cvButton {
+  width: 200px;
 }
 
 .about-text a:hover {
@@ -340,7 +340,6 @@ width: 200px;
   text-align: center;
 }
 
-
 @media (max-width: 871px) {
   section {
     padding: 50px;
@@ -361,9 +360,9 @@ width: 200px;
     font-size: 18px;
   }
 
-  .cvButton{
+  .cvButton {
     width: 200px;
-      }
+  }
 }
 @media (max-width: 800px) {
   section {
@@ -411,7 +410,7 @@ width: 200px;
     background-size: 25px;
     cursor: pointer;
   }
-  .cvButton{
+  .cvButton {
     width: 200px;
   }
   .about-text {
@@ -441,8 +440,9 @@ width: 200px;
     width: 400px;
     padding: 20px;
   }
+
 }
-/* for small devices */
+
 @media (max-width: 600px) {
   section {
     padding: 135px;
@@ -464,7 +464,7 @@ width: 200px;
     margin-bottom: 1.8rem;
     line-height: 3rem;
   }
-  .about-text{
+  .about-text {
     padding: 25px;
   }
 
@@ -499,15 +499,15 @@ width: 200px;
     width: 400px;
     padding: 20px;
   }
- 
-  .cvButton{
-width: 200px;
+
+  .cvButton {
+    width: 200px;
   }
   .about-text {
     max-width: 280px;
   }
 
-  .about-img{
+  .about-img {
     width: 150px;
     height: 200px;
   }
@@ -528,8 +528,188 @@ width: 200px;
     flex-direction: column;
   }
   .contact-form {
-    width: 300px;
-  }    
+    width: 75px;
+  }
+  .skills-content{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+  .contact-content{
+    width: 170px;
+  }
 }
 
-@media (min-width: 300px) {}
+@media (max-width: 800px) {
+  section {
+    padding: 35px;
+  }
+  nav {
+    padding: 10px 50px;
+    z-index: 1000;
+  }
+  .menu {
+    position: fixed;
+    top: 60px;
+    right: 100%;
+    display: block;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--second-color);
+    transition: 0.5s ease;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .menu.active {
+    right: 0;
+  }
+  nav ul li a {
+    font-size: 35px;
+    line-height: 80px;
+    color: #fff;
+  }
+  .toggle {
+    width: 40px;
+    height: 40px;
+    background: url("menu-regular-24 (1).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30px;
+    cursor: pointer;
+  }
+  .toggle.active {
+    background: url("x-regular-24.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    cursor: pointer;
+  }
+  .cvButton {
+    width: 200px;
+  }
+  .about-text {
+    width: 100%;
+    justify-content: center;
+    line-height: 1.5rem;
+  }
+  .about-text h1 {
+    font-size: 1.8rem;
+    color: rgb(97, 44, 38);
+  }
+  .about-text p {
+    color: rgb(97, 44, 38);
+    margin: 5px 0 24px;
+    font-size: 18px;
+  }
+
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+  }
+
+}
+
+@media (max-width: 280px) {
+  section {
+    padding: 50px;
+  }
+  #home {
+    flex-direction: column;
+  }
+  .home-text {
+    max-width: 280px;
+    margin-top: 2rem;
+    margin-bottom: 40px;
+  }
+  .home-img {
+    width: 150px;
+    height: 200px;
+  }
+  .home-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+    line-height: 3rem;
+  }
+  .about-text {
+    padding: 35px;
+  }
+
+  .about-text {
+    width: 100%;
+    justify-content: center;
+    line-height: 1.5rem;
+  }
+  .about-text h1 {
+    font-size: 1.5rem;
+    color: rgb(97, 44, 38);
+  }
+  .about-text p {
+    color: rgb(97, 44, 38);
+    margin: 5px 0 24px;
+    font-size: 10px;
+  }
+
+  .work-content {
+    flex-direction: column;
+  }
+
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .about-content {
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+  }
+
+  .cvButton {
+    width: 200px;
+  }
+  .about-text {
+    max-width: 280px;
+  }
+
+  .about-img {
+    width: 150px;
+    height: 200px;
+  }
+  .work-text {
+    max-width: 380px;
+    padding: 50px;
+  }
+  .work-text h1 {
+    font-size: 0.7rem;
+    line-height: 2rem;
+  }
+  .work-img {
+    width: 200px;
+    height: 280px;
+    margin-top: 4rem;
+  }
+  .contact-content {
+    flex-direction: column;
+  }
+  .contact-form {
+    width: 250px;
+  }
+  .skills-content{
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+  .contact-content{
+    width: 170px;
+  }
+}
